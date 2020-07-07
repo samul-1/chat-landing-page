@@ -8,15 +8,15 @@
     <meta name="author" content="">
 
     <title>Chat 1.0 Tour</title>
-    {% load static %}
-    {% load bootstrap4 %}
+    <!-- CSS only -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
-	{# Load CSS and JavaScript #}
-	{% bootstrap_css %}
-	{% bootstrap_javascript jquery='full' %}
-
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <!-- Custom styles for this template -->
-    <link rel="stylesheet" type="text/css" href="{% static 'chat/carousel.css' %}">
+    <link rel="stylesheet" type="text/css" href="carousel.css">
     <style>
         .right-faded {
             box-shadow: 25px 25px 50px 0 white inset, -25px -25px 50px 0 white inset; 
@@ -75,7 +75,7 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="image-container text-center">
-                <img class="first-slide" src="{% static 'images/content1.png' %}" style="width: 98%">
+                <img class="first-slide" src="content1.png" style="width: 98%">
                 <div class="after"></div>
             </div>
             <div class="container">
@@ -127,19 +127,19 @@
         <!-- Three columns of text below the carousel -->
         <div class="row">
           <div class="col-lg-4">
-            <img src="{% static 'images/messages.png' %}" >
+            <img src="messages.png" >
             <h3>Real-time public and private messaging</h3>
             <p>Thanks to its real-time nature, <b>Chat 1.0</b> allows for fast and secure communication between users. You can post a message on the main, public channel, or privately message another user.</p>
             <!-- <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p> -->
           </div><!-- /.col-lg-4 -->
           <div class="col-lg-4">
-            <img src="{% static 'images/colorset-selection.png' %}" width="150" height="140"><!--class="rounded-circle"-->
+            <img src="colorset-selection.png" width="150" height="140"><!--class="rounded-circle"-->
             <h3>Skin selection</h3>
             <p>Fan of dark themes? <b>Chat 1.0</b> allows you to switch between a light and a dark colorset, to better suit your preferences and habits. Your selection can be changed at any time, and will be remembered by the system each time you log in.</p>
             <!-- <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p> -->
           </div><!-- /.col-lg-4 -->
           <div class="col-lg-4">
-            <img src="{% static 'images/kick-menu.png' %}" width="200" height="140">
+            <img src="kick-menu.png" width="200" height="140">
             <h3>Powerful moderation tools</h3>
             <p>Staff members have access to several tools that enable them to ensure users follow the rules. Operators can kick users from the chat or ban them. What's more, the staff can access chat logs to read past messages and can enter the chat in invisible mode (aka ninja mode). Nobody will even know they're online!</p>
             <!-- <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p> -->
@@ -158,7 +158,7 @@
           </div>
           <div class="col-md-7">
             <div class="text-center">
-                <img class="featurette-image img-fluid mx-auto right-faded" src="{% static 'images/ui-ss1.png' %}">
+                <img class="featurette-image img-fluid mx-auto right-faded" src="ui-ss1.png">
             </div>
           </div>
         </div>
@@ -172,8 +172,8 @@
           </div>
           <div class="col-md-5 order-md-1">
             <div class="text-center">
-                <img class="featurette-image img-fluid mx-auto" src="{% static 'images/priv-msg.png' %}"><br />
-                <img class="featurette-image img-fluid mx-auto" src="{% static 'images/notification.png' %}">
+                <img class="featurette-image img-fluid mx-auto" src="priv-msg.png"><br />
+                <img class="featurette-image img-fluid mx-auto" src="notification.png">
             </div>
           </div>
         </div>
@@ -187,9 +187,9 @@
           </div>
           <div class="col-md-5">
             <div class="text-center">
-                <img class="featurette-image img-fluid mx-auto" src="{% static 'images/enter-invisible.png' %}">
+                <img class="featurette-image img-fluid mx-auto" src="enter-invisible.png">
                 <span><i class="fas fa-chevron-down"></i></span><br />
-                <img class="featurette-image img-fluid mx-auto" src="{% static 'images/invisible-user.png' %}">
+                <img class="featurette-image img-fluid mx-auto" src="invisible-user.png">
             </div>
           </div>
         </div>
